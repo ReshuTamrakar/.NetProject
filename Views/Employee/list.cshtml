@@ -1,0 +1,45 @@
+﻿@{
+    Layout = null;
+}
+@model List<WebApplication1.Models.Employee>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <table border="1">
+
+            <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Gender</th>
+                <th>Salary</th>
+                <td colspan="2">Action</td>
+                <td >More</td>
+                <td>Present</td>
+                <td>Present Days</td>
+            </tr>
+            @foreach (var e in Model)
+            {
+            <tr>
+                <td>@e.FirstName</td>
+                <td>@e.LastName</td>
+                <td>@e.Gender</td>
+                <td>@e.Salary</td>
+                <td><a href="/employee/edit/@e.ID">Edit</a></td>
+                <td><a href="/employee/delete/@e.ID">Delete</a></td>
+                <td><a href="/employee/details/@e.ID">More Details</a></td>
+                <td><a href="/employee/present/@e.ID">Present</a></td>
+                <td>@e.Days</td>
+            </tr>
+            }
+
+        </table>
+        <a href="/employee/index">Create new Account</a>
+    </div>
+</body>
+</html>

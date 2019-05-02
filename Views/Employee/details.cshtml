@@ -1,0 +1,43 @@
+﻿@{
+    Layout = null;
+}
+@model WebApplication1.Models.Employee
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td>FirstName</td>
+                <td>@Model.FirstName</td>
+            </tr>
+            <tr>
+                <td>LastName</td>
+                <td>@Model.LastName</td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>@Model.Gender</td>
+            </tr>
+            <tr>
+                <td>Total Salary</td>
+                <td>@Model.Salary</td>
+            </tr>
+            <tr>
+                <td>Present Days</td>
+                <td>@Model.Days</td>
+            </tr>
+            <tr>
+                <td>Pay Salary</td>
+                <td>@Model.PaySalary</td>
+            </tr>
+        </table>
+        <a href="/employee/list">Back</a>
+    </div>
+</body>
+</html>
