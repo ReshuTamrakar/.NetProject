@@ -7,6 +7,6 @@ Upload Project on github:
 2). ls
 3). $ git init
 4). $ git add --all
-5). git config user.name "ReshuTamrakar"
-6). git config user.email "reshu.tamrakar@gmail.com"
-7). git commit -m "second Commit" (edited) 
+5). git config user.name "username"
+6). git config user.email "emailaddress"
+7). git commit -m "second Commit"  
